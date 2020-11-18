@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "79ed67cc-8182-4340-ad43-a099606dc42f",
+		"name": "api-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "new campaign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"campaignName\": \"contests\",\r\n    \"mandatoryFields\": [\"name\", \"email\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all campaigns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campaign by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update campaign",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"campaignName\": \"contests\",\r\n    \"mandatoryFields\": [\"name\", \"email\", \"phone\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete campaign",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shvalb\",\r\n    \"email\": \"eliyahu.shvalb@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/1/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"1",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all contacts for campaign",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/1/allcontacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"1",
+						"allcontacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/marketing/ws/partner/campaign/1/contact/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"marketing",
+						"ws",
+						"partner",
+						"campaign",
+						"1",
+						"contact",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
